@@ -1,0 +1,193 @@
+
+ div.card{
+    /* width: 250px; */
+    height: 300px;
+    border: 1px solid black;
+    transition: all 0.4s linear;
+    position: relative;
+    overflow: hidden;
+    background: rgba(0,0,0,0.9);
+    box-shadow: 5px 5px 2px gainsboro;
+}
+div.card::before{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 3%, rgba(2,0,32,1) 15%, rgba(0,0,13,1) 65%, rgba(0,0,0,1) 100%);
+    margin-top: 300px;
+    transition: all 0.4s linear;
+    z-index: 2;
+}
+div.rating{
+    border: 1px solid red;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: inset 0px 5px 8px rgba(0,0,0,0.5);
+    background: white;
+}
+div.rating p{
+    font-size: 0.8rem;
+}
+div.card:hover img{
+    filter: blur(3px);
+}
+div.card:hover::before{
+    margin-top: 140px;
+    
+}
+div.card img{
+   width: 100%;
+   height: 240px;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+div.movie_data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index: 3; */
+    position: relative;
+    color: black;
+    margin: 10px 2px;
+    padding: 0px 4px;
+}
+div.movie_name p{
+    color: white;
+}
+div.movie_review{
+    margin-top: 100px;
+    color: white;
+    position: relative;
+    z-index: 3;
+    transition: all 0.4s linear;
+    box-sizing: border-box;
+    overflow: scroll;
+    height: 50%;
+}
+div.movie_review h2{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+div.movie_review p{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 1px 5px;
+}
+div.card:hover div.movie_review{
+    margin-top:-150px;
+}
+div.movie_img img{
+    width: 300px;
+    height: 400px;
+    margin-top: 40px;
+}
+div.movie_data_again{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    /* align-items: center; */
+    gap: 20px;
+    border: 1px solid red;
+    /* flex-wrap: wrap; */
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    /* position: relative; */
+}
+div.movie_details{
+    display: flex;
+    justify-content: start;
+    /* align-items: center; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 1px solid blue;
+    margin-top: 40px;
+}
+div.movie_overview{
+    margin-top: 40px;
+}
+div.movie_details,div.movie_overview h4{
+font-size: 1.1rem;
+}
+div.movie_details span{
+    /* padding: 4px 15px; */
+    background: white;
+    text-align: center;
+    color: black;
+}
+div.movie_details,div.movie_overview h4{
+    text-align: center;
+    color: cyan;
+}
+div.movie_overview p{
+    color: white;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+span.close_btn{
+    display: flex;
+    justify-content: end;
+    color: white;
+    font-size: 30px;
+    width: 90%;
+    margin: 0px auto;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width : 720px){
+    div.card{
+        height: 290px;
+        border: 1px solid black;
+        transition: all 0.4s linear;
+        position: relative;
+        overflow: hidden;
+        background: rgba(0,0,0,0.9);
+        box-shadow: 5px 5px 1px gainsboro;
+    }
+    div.card::before{
+        content: '';
+        position: absolute;
+        height: 290px;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 3%, rgba(2,0,32,1) 15%, rgba(0,0,13,1) 65%, rgba(0,0,0,1) 100%);
+        margin-top: 300px;
+        transition: all 0.4s linear;
+        z-index: 2;
+    }
+    div.rating p{
+        font-size: 0.5rem;
+    }
+    div.movie_name p{
+        color: white;
+        font-size: 0.7rem;
+    }
+    div.movie_review h2{
+        color: white;
+        text-align: center;
+        text-transform: capitalize;
+        text-decoration: underline;
+        font-size: 1.1rem;
+    }
+    div.movie_review p{
+        text-align: center;
+        text-transform: capitalize;
+        padding: 1px 5px;
+        font-size: 0.7rem;
+        cursor: pointer;
+    }
+    div.movie_img{
+        width: 100%;
+        height: 300px;
+    }
+    div.card:hover div.movie_review{
+        margin-top:-140px;
+    }
+
+
+}

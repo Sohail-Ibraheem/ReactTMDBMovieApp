@@ -1,0 +1,131 @@
+header{
+    width: 100vw;
+    height: auto;
+    /* border: 1px solid green; */
+    /* position: relative; */
+}
+nav{
+    /* position: absolute; */
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* position: fixed;
+    z-index: 5; */
+    margin: 10px auto;
+   
+}
+nav div.nav_brand h2{
+    font-size: 1.5rem;
+    color: white;
+}
+nav div.nav_brand h2 span.brand{
+    font-size: 1.5rem;
+    color: rgb(221, 64, 64);
+}
+div.nav_menu ul{
+    display: flex;
+}
+nav div.nav_brand h2 span{
+    color: red;
+}
+div.nav_menu ul{
+    display: flex;
+    gap: 20px;
+}
+div.nav_menu ul li{
+    list-style: none;
+}
+div.nav_menu ul li a{
+    text-decoration: none;
+    cursor: pointer;
+}
+div.search input{
+    
+    outline: none;
+
+}
+div.search{
+    /* background:#111212; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+form input{
+    padding: 5px 15px;
+    outline: none;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    font-size: 0.9rem;
+    transition: all 0.4s linear;
+    width: 300px;
+}
+
+form input::placeholder{
+    color: white;
+    text-transform: capitalize;
+}
+form input:focus{
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0px;
+    text-transform: capitalize;
+}
+button.submit_btn{
+    padding: 6px 20px;
+    border-radius: 12px;
+    outline: none;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    transition: all 0.3s linear;
+    font-size: 0.9rem;
+
+}
+button.submit_btn:hover{
+    background:#fff000;
+    color: black;
+    box-shadow:0 0 20px rgba(0,0,0,.5);
+    text-shadow:0 0 10px #fff000;
+}
+
+
+
+@media screen and (max-width : 720px){
+    nav div.nav_brand h2{
+        font-size: 1.1rem;
+        color: white;
+    }
+    nav div.nav_brand h2 span.brand{
+        font-size: 1.1rem;
+        color: rgb(221, 64, 64);
+    }
+    button.submit_btn{
+        padding: 3px 10px;
+        border-radius: 12px;
+        outline: none;
+        background: none;
+        border: 1px solid white;
+        color: white;
+        transition: all 0.3s linear;
+        font-size: 0.8rem;
+    
+    }
+    form input{
+        padding: 5px 10px;
+        outline: none;
+        border-radius: 12px;
+        background: none;
+        color: white;
+        border: 1px solid white;
+        font-size: 0.7rem;
+        transition: all 0.4s linear;
+        width: 200px;
+      
+    }
+}
